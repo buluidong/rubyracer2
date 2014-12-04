@@ -1,0 +1,38 @@
+<div class="container">
+  <h1>Racinger</h1>
+  <p>Gentlemen start your engine!</p>
+
+   <table class="racer_table">
+      <tr id="player1_strip">
+        <td id='first' class="active"><b>|-></b></td>
+       <% 40.times do %>
+        <td></td>
+        <% end %>
+      </tr>
+
+      <tr></tr>
+
+        <% 41.times do %>
+        <td class='road'></td>
+        <% end %>
+
+      <tr id="player2_strip">
+        <td id='second' class="active"><b>|-></b></td>
+        <% 40.times do %>
+        <td></td>
+        <% end %>
+      </tr>
+    </table>
+
+    <table style=display:inline-block>
+        <tr>
+            <td id='player1'>Player 1: <b><%= @player1.name.capitalize %></b> smash <b>'Q'</b></td>
+        </tr>
+        <tr>
+            <td id='player2'>Player 2: <b><%= @player2.name.capitalize %></b> smash <b>'9'</b></td>
+        </tr>
+    </table>
+
+    <p><a href='/'>Restarto!!</a></p>
+
+</div>
